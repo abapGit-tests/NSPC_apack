@@ -3,9 +3,9 @@
  <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
   <asx:values>
    <VSEOINTERF>
-    <CLSNAME>/MBTOOLS/IF_APACK_MANIFEST</CLSNAME>
+    <CLSNAME>/APMG/IF_APACK_MANIFEST</CLSNAME>
     <LANGU>E</LANGU>
-    <DESCRIPT>APACK: Manifest interface</DESCRIPT>
+    <DESCRIPT>abapGit Test</DESCRIPT>
     <EXPOSURE>2</EXPOSURE>
     <STATE>1</STATE>
     <UNICODE>X</UNICODE>

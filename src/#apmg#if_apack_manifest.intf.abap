@@ -1,6 +1,4 @@
-INTERFACE /mbtools/if_apack_manifest
-  PUBLIC.
-
+INTERFACE /apmg/if_apack_manifest PUBLIC.
 
   TYPES:
     BEGIN OF ty_dependency,
@@ -25,8 +23,9 @@ INTERFACE /mbtools/if_apack_manifest
       dependencies    TYPE ty_dependencies,
     END OF ty_descriptor.
 
-  CONSTANTS co_file_name TYPE string VALUE '.apack-manifest.xml' ##NO_TEXT.
-  CONSTANTS co_abap_git TYPE ty_repository_type VALUE 'abapGit' ##NO_TEXT.
-  CONSTANTS co_interface_version TYPE i VALUE 1 ##NO_TEXT.
+  CONSTANTS co_file_name TYPE string VALUE '.apack-manifest.xml'.
+  CONSTANTS co_abap_git TYPE ty_repository_type VALUE 'abapGit'.
+  CONSTANTS co_interface_version TYPE i VALUE 1.
   DATA descriptor TYPE ty_descriptor READ-ONLY.
+
 ENDINTERFACE.
