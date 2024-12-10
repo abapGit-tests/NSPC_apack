@@ -3,13 +3,13 @@
  <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
   <asx:values>
    <NSPC>
-    <NAMESPACE>/APMG/</NAMESPACE>
-    <REPLICENSE>41813564412598342476</REPLICENSE>
+    <NAMESPACE>/ABAPGIT/</NAMESPACE>
+    <REPLICENSE>40091955262536808301</REPLICENSE>
    </NSPC>
    <NSPC_TEXT>
     <SPRAS>E</SPRAS>
-    <DESCRIPTN>apm</DESCRIPTN>
-    <OWNER>apm.to Inc.</OWNER>
+    <DESCRIPTN>abapGit</DESCRIPTN>
+    <OWNER>abapGit Community</OWNER>
    </NSPC_TEXT>
   </asx:values>
  </asx:abap>

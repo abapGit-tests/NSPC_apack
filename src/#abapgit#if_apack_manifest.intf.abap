@@ -1,4 +1,4 @@
-INTERFACE /apmg/if_apack_manifest PUBLIC.
+INTERFACE /abapgit/if_apack_manifest PUBLIC.
 
   TYPES:
     BEGIN OF ty_dependency,
@@ -7,12 +7,12 @@ INTERFACE /apmg/if_apack_manifest PUBLIC.
       version        TYPE string,
       git_url        TYPE string,
       target_package TYPE devclass,
-    END OF ty_dependency.
-  TYPES:
-    ty_dependencies    TYPE STANDARD TABLE OF ty_dependency
-                            WITH NON-UNIQUE DEFAULT KEY.
-  TYPES ty_repository_type TYPE string.
-  TYPES:
+    END OF ty_dependency,
+
+    ty_dependencies    TYPE STANDARD TABLE OF ty_dependency WITH NON-UNIQUE DEFAULT KEY,
+
+    ty_repository_type TYPE string,
+
     BEGIN OF ty_descriptor,
       group_id        TYPE string,
       artifact_id     TYPE string,
@@ -23,9 +23,11 @@ INTERFACE /apmg/if_apack_manifest PUBLIC.
       dependencies    TYPE ty_dependencies,
     END OF ty_descriptor.
 
-  CONSTANTS co_file_name TYPE string VALUE '.apack-manifest.xml'.
-  CONSTANTS co_abap_git TYPE ty_repository_type VALUE 'abapGit'.
-  CONSTANTS co_interface_version TYPE i VALUE 1.
+  CONSTANTS:
+    co_file_name         TYPE string VALUE '.apack-manifest.xml',
+    co_abap_git          TYPE ty_repository_type VALUE 'abapGit',
+    co_interface_version TYPE i VALUE 1.
+
   DATA descriptor TYPE ty_descriptor READ-ONLY.
 
 ENDINTERFACE.
